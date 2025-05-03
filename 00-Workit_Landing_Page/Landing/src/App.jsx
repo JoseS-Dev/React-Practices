@@ -1,5 +1,10 @@
+import HeaderPage from "./Components/HeaderPage";
+import SectionInfo from "./Components/SectionInfo";
+import ImageTest from "./Components/ImageTest";
+import FooterSection from "./Components/FooterSection";
+import "./Css/App.css";
 
-function App() {
+export default function App() {
   return (
     <>
       
@@ -7,4 +12,3 @@ function App() {
   )
 }
 
-export default App
