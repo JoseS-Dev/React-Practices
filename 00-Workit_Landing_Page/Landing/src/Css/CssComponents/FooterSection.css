@@ -1,0 +1,39 @@
+.Js-Footer{
+    border: 1px solid #000;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #300049;;
+}
+.Js-Footer .Js-Footer-Section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 30px;
+}
+.Js-Footer .Js-Footer-Section h2{
+    font-family: 2.5em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.Js-Footer .Js-Footer-Section .Js-Imagen{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Js-Footer .Js-Footer-Section .Js-Imagen img{
+    width: 50px;
+    height: 50px;
+    min-height: 45px;
+    filter: brightness(1);
+    mix-blend-mode: multiply;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.Js-Footer .Js-Footer-Section .Js-Imagen img:hover{
+    filter: brightness(2);
+    transform: scale(1.2);
+}

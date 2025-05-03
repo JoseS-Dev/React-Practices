@@ -9,9 +9,9 @@ export default function FooterSection(){
                     <h2>Workit</h2>
                     <hr/>
                     <div className="Js-Imagen">
-                        <img src="" alt="Instagram" />
-                        <img src="" alt="Linkedin" />
-                        <img src="" alt="Facebook" />
+                        <img src="https://static.vecteezy.com/system/resources/previews/019/874/351/original/instagram-apps-icon-free-png.png" alt="Instagram" />
+                        <img src="https://th.bing.com/th/id/OIP.YXhLFa13kBqBgbhqPXWA6wHaHa?rs=1&pid=ImgDetMain" alt="Linkedin" />
+                        <img src="https://th.bing.com/th/id/OIP.ENIq-U2iyx2c51zh5Hv5aAHaHa?rs=1&pid=ImgDetMain" alt="Facebook" />
                     </div>
                 </footer>
             </div>

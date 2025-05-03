@@ -12,6 +12,7 @@ export default function App() {
       <ImagePhone />
       <SectionInfo />
       <ImageTest />
+      <FooterSection />
     </>
   )
 }
