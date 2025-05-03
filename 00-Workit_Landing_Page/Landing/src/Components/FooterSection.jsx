@@ -7,7 +7,6 @@ export default function FooterSection(){
             <div className="Js-Footer">
                 <footer className="Js-Footer-Section">
                     <h2>Workit</h2>
-                    <hr/>
                     <div className="Js-Imagen">
                         <img src="https://static.vecteezy.com/system/resources/previews/019/874/351/original/instagram-apps-icon-free-png.png" alt="Instagram" />
                         <img src="https://th.bing.com/th/id/OIP.YXhLFa13kBqBgbhqPXWA6wHaHa?rs=1&pid=ImgDetMain" alt="Linkedin" />
