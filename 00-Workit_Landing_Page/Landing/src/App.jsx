@@ -11,6 +11,7 @@ export default function App() {
       <HeaderPage />
       <ImagePhone />
       <SectionInfo />
+      <ImageTest />
     </>
   )
 }
