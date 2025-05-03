@@ -16,9 +16,7 @@ export default function HeaderPage(){
                     <button>Learn More</button>
                 </article>
             </section>
-            <section className="Js-ImageData">
-                <img src="../../public/OIP.jpeg"/>
-            </section>
         </div>
+        
     )
 }
