@@ -7,7 +7,7 @@ import "./Css/App.css";
 export default function App() {
   return (
     <>
-      
+      <HeaderPage />
     </>
   )
 }

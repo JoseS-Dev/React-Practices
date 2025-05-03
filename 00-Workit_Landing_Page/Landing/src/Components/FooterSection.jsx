@@ -3,6 +3,8 @@ import "../Css/CssComponents/FooterSection.css"
 
 export default function FooterSection(){
     return(
-
+        <>
+        
+        </>
     )
 }
