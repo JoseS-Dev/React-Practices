@@ -1,0 +1,74 @@
+.Js-ContainerCard{
+    border: 1px solid #000;
+    width: 65%;
+    padding: 5px;
+    background-color: #222;
+    color: #ddaa;
+}
+.Js-ContainerCard .Card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.Js-ContainerCard .Card .Js-ImageCard{
+    
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+.Js-ContainerCard .Card .Js-ImageCard img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+}
+.Js-ContainerCard .Card .Js-ImageCard .Js-TextCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+}
+.Js-ContainerCard .Card .Js-ImageCard .Js-TextCard h4{
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+.Js-ContainerCard .Card .Js-ImageCard .Js-TextCard p{
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+.Js-ContainerCard .Card .Js-ButtonContainer{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.Js-ContainerCard .Card .Js-ButtonContainer button{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+.Js-ContainerCard .Card .Js-ButtonContainer button:hover{
+    background-color: #059;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.Js-ContainerCard .Card .Js-ButtonContainer .Js-ButtonCard--isFollowing{
+    background-color: #059;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.Js-ContainerCard .Card .Js-ButtonContainer .Js-ButtonCard--isFollowing:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
