@@ -46,7 +46,7 @@
     align-items: center;
     padding: 10px;
 }
-.Js-ContainerCard .Card .Js-ButtonContainer button{
+.Js-ContainerCard .Card .Js-ButtonContainer .Js-ButtonCard{
     background-color: #fff;
     color: #000;
     border: none;
@@ -57,18 +57,24 @@
     font-size: 1em;
     letter-spacing: 1px;
 }
-.Js-ContainerCard .Card .Js-ButtonContainer button:hover{
-    background-color: #059;
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-}
 .Js-ContainerCard .Card .Js-ButtonContainer .Js-ButtonCard--isFollowing{
     background-color: #059;
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
+
 .Js-ContainerCard .Card .Js-ButtonContainer .Js-ButtonCard--isFollowing:hover{
-    background-color: #fff;
-    color: #000;
+    background-color: #f00;
+    color: #fff;
     transition: all 0.3s ease-in-out;
+}
+.Js-ContainerCard .Card .Js-ButtonContainer .Js-ButtonCard--notFollowing{
+    display: none;
+    
+}
+.Js-ContainerCard .Card .Js-ButtonContainer .Js-ButtonCard--isFollowing:hover .Js-ButtonCard--notFollowing{
+    display: block;
+}
+.Js-ContainerCard .Card .Js-ButtonContainer .Js-ButtonCard--isFollowing:hover .Js-ButtonCard--isFollowing{
+    display: none;
 }
