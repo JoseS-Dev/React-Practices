@@ -23,7 +23,7 @@ export function ButtonCalculator({Expression, setExpression}){
                 <button onClick={() => handleClick(NUMBERS.SEVEN)}>{NUMBERS.SEVEN}</button>
                 <button onClick={() => handleClick(NUMBERS.EIGHT)}>{NUMBERS.EIGHT}</button>
                 <button onClick={() => handleClick(NUMBERS.NINE)}>{NUMBERS.NINE}</button>
-                <button onClick={() => handleClick(NUMBERS.CLEAR)}>{VALUES.CLEAR}</button>
+                <button onClick={() => handleClick(VALUES.CLEAR)}>{VALUES.CLEAR}</button>
             </article>
             <article className="Js--Container">
                 <button onClick={() => handleClick(NUMBERS.FOUR)}>{NUMBERS.FOUR}</button>
@@ -44,8 +44,8 @@ export function ButtonCalculator({Expression, setExpression}){
                 <button onClick={() => handleClick(VALUES.MULTIPLY)}>{VALUES.MULTIPLY}</button>
             </article>
             <article className="Js--Container">
-                <button onClick={() => handleClick(VALUES.RESET)}>{VALUES.RESET}</button>
-                <button onClick={() => handleClick(VALUES.EQUAL)}>{VALUES.EQUAL}</button>
+                <button className="Js-Reset" onClick={() => handleClick(VALUES.RESET)}>{VALUES.RESET}</button>
+                <button className="Js-Equal" onClick={() => handleClick(VALUES.EQUAL)}>{VALUES.EQUAL}</button>
             </article>
         </section>
     )

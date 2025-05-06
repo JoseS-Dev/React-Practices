@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { SectionResult } from './Components/SectionResult';
 import { ButtonCalculator } from "./Components/buttonCalculator";
+import './Calculator.css'
 function App() {
   const [expression, setExpression] = useState('')
   return (
