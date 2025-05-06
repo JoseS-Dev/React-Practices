@@ -1,6 +1,6 @@
 export const Turns = {
-    X: 'X',
-    O: 'O',
+    X: 'x',
+    O: 'o',
   }
   
 export const Winners = [

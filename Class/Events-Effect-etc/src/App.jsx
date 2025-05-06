@@ -8,8 +8,14 @@ import Turn from "./Componets/Turn";
 
 
 export default function App() {
-  const[board, setBoard] = useState(Array(9).fill(null))
-  const [turn, setTurn] = useState(Turns.X);
+  const[board, setBoard] = useState(() => {
+    const boardFromStorage = localStorage.getItem('board');
+    return boardFromStorage ? JSON.parse(boardFromStorage) : Array(9).fill(null);
+  })
+  const [turn, setTurn] = useState(() => {
+    const turnFromStorage = localStorage.getItem('turn');
+    return turnFromStorage ? JSON.parse(turnFromStorage) : Turns.X;
+  });
   const [winner, setWinner] = useState(null);
   
   const updateBoard = (index) => {
@@ -27,6 +33,8 @@ export default function App() {
     // Cambiar el turno
     const newTurns = turn === Turns.X ? Turns.O : Turns.X;
     setTurn(newTurns);
+    localStorage.setItem('board', JSON.stringify(newBoard));
+    localStorage.setItem('turn', JSON.stringify(newTurns));
 
     // Revisar si hay un ganador
     const newWinner = WinnerTable(newBoard);
@@ -44,6 +52,8 @@ export default function App() {
     setBoard(Array(9).fill(null));
     setTurn(Turns.X);
     setWinner(null);
+    localStorage.removeItem('board');
+    localStorage.removeItem('turn');
   }
 
 
