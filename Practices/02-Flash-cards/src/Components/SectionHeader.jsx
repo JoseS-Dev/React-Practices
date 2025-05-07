@@ -1,20 +1,6 @@
-import { useState } from "react";
 import "../Css/StylesComp/SectionHeader.css";
 
-export function SectionHeader({ title, length }){
-    const [cont, setCont] = useState(1);
-    
-    // Funcion que aumenta el contador de las preguntas y el input range
-    const handleCont = () => {
-        if(cont < length){
-            setCont(cont + 1);
-        }
-        else{
-            setCont(1);
-        }
-    } 
-    
-    
+export function SectionHeader({ title, length, cont, handleCont }){
     return(
         <section className="JS--Section--Header">
             <h1>{title}</h1>
