@@ -1,0 +1,95 @@
+.JS--Section--Container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.JS--Section--Container .JS--Container{
+    border-right: 2px solid #444;
+    width: 50%;
+    height: 100%;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.JS--Section--Container .JS--Container h2{
+    font-size: 2.3em;
+    color: #eee;
+    letter-spacing: 2px;
+    font-weight: 500;
+    width: 100%;
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+.JS--Section--Container .JS--Container--Question{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ddaa00;
+}
+.JS--Section--Container .JS--Container--Question p{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8em;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.JS--Section--Container .JS--Container--Answers{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.JS--Section--Container .JS--Container--Answers .JS--Content--Answer{
+    border: 1px solid #666;
+    box-shadow: 0 0 5px #666;
+    width: 95%;
+    height: 20%;
+    max-width: 100%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 25px;
+    transition: ease-in .1s;
+}
+.JS--Section--Container .JS--Container--Answers .JS--Content--Answer:hover{
+    box-shadow: 0 0 10px #ddaa;
+    background-color: #222;
+    cursor: pointer;
+}
+
+.JS--Section--Container .JS--Container--Answers .JS--Content--Answer--Correct{
+    background-color: #0e4;
+    box-shadow: 0 0 10px #0e4;
+    color: #000;
+    font-weight: 500;
+}
+.JS--Section--Container .JS--Container--Answers .JS--Content--Answer--Incorrect{
+    background-color: #e00;
+    box-shadow: 0 0 10px #e00;
+    color: #000;
+    font-weight: 500;
+}
+
+.JS--Section--Container .JS--Container--Answers .JS--Content--Answer span{
+    color: #eee;
+    letter-spacing: 2px;
+    font-size: 1.7em;
+    font-weight: 500;
+}
+.JS--Section--Container .JS--Container--Answers .JS--Content--Answer span::first-letter{
+    color: #ddaa00;
+}
