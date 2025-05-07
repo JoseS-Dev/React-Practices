@@ -10,7 +10,27 @@ function App() {
   const [Questions, setQuestions] = useState([]);
   
   // UseEffect para leer el JSON Questions.json
-  
+  useEffect(() => {
+    const fetchQuestions = () => {
+      fetch('./Questions.json').then(
+        response => {
+          if (!response.ok) return null;
+          return response.json();
+        }
+      ).then(
+        data => {
+          const ListQuestions = data.questions;
+          setQuestions(ListQuestions);
+        }
+      ).catch(
+        error => {
+          console.error("Error fetching questions:", error);
+        }
+      )
+    }
+    fetchQuestions();
+  }, []);
+  console.log(Questions);
   // Funcion que pasa a la siguiente pregunta
   const NextQuestion = () => {
     if (cont < 10){

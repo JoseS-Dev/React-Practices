@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "What is the capital of France?",
+            "answers": ["Paris", "London", "Berlin", "Madrid"],
+            "correct_answer": "Paris"
+        },
+        {
+            "question": "Which planet is known as the Red Planet?",
+            "answers": ["Earth", "Mars", "Jupiter", "Venus"],
+            "correct_answer": "Mars"
+        },
+        {
+            "question": "What is the largest mammal in the world?",
+            "answers": ["Elephant", "Blue Whale", "Giraffe", "Great White Shark"],
+            "correct_answer": "Blue Whale"
+        },
+        {
+            "question": "Who wrote 'Romeo and Juliet'?",
+            "answers": ["William Shakespeare", "Charles Dickens", "Mark Twain", "Jane Austen"],
+            "correct_answer": "William Shakespeare"
+        },
+        {
+            "question": "What is the chemical symbol for water?",
+            "answers": ["H2O", "O2", "CO2", "NaCl"],
+            "correct_answer": "H2O"
+        },
+        {
+            "question": "What is the square root of 64?",
+            "answers": ["6", "7", "8", "9"],
+            "correct_answer": "8"
+        },
+        {
+            "question": "Which country is known as the Land of the Rising Sun?",
+            "answers": ["China", "Japan", "South Korea", "Thailand"],
+            "correct_answer": "Japan"
+        },
+        {
+            "question": "What is the smallest prime number?",
+            "answers": ["0", "1", "2", "3"],
+            "correct_answer": "2"
+        },
+        {
+            "question": "Who painted the Mona Lisa?",
+            "answers": ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Claude Monet"],
+            "correct_answer": "Leonardo da Vinci"
+        },
+        {
+            "question": "What is the capital of Italy?",
+            "answers": ["Rome", "Venice", "Florence", "Milan"],
+            "correct_answer": "Rome"
+        },
+        {
+            "question": "What is the largest ocean on Earth?",
+            "answers": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+            "correct_answer": "Pacific Ocean"
+        },
+        {
+            "question": "What is the freezing point of water in Celsius?",
+            "answers": ["0", "32", "100", "-1"],
+            "correct_answer": "0"
+        },
+        {
+            "question": "Who discovered gravity?",
+            "answers": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Nikola Tesla"],
+            "correct_answer": "Isaac Newton"
+        },
+        {
+            "question": "What is the capital of Spain?",
+            "answers": ["Barcelona", "Madrid", "Seville", "Valencia"],
+            "correct_answer": "Madrid"
+        },
+        {
+            "question": "What is the largest desert in the world?",
+            "answers": ["Sahara", "Gobi", "Antarctic Desert", "Kalahari"],
+            "correct_answer": "Antarctic Desert"
+        },
+        {
+            "question": "What is the speed of light?",
+            "answers": ["300,000 km/s", "150,000 km/s", "1,000 km/s", "500,000 km/s"],
+            "correct_answer": "300,000 km/s"
+        },
+        {
+            "question": "What is the main ingredient in guacamole?",
+            "answers": ["Tomato", "Avocado", "Onion", "Lime"],
+            "correct_answer": "Avocado"
+        },
+        {
+            "question": "What is the capital of Germany?",
+            "answers": ["Berlin", "Munich", "Frankfurt", "Hamburg"],
+            "correct_answer": "Berlin"
+        },
+        {
+            "question": "What is the boiling point of water in Celsius?",
+            "answers": ["100", "0", "50", "200"],
+            "correct_answer": "100"
+        },
+        {
+            "question": "Who is known as the father of computers?",
+            "answers": ["Charles Babbage", "Alan Turing", "John von Neumann", "Steve Jobs"],
+            "correct_answer": "Charles Babbage"
+        }
+    ]
+}
