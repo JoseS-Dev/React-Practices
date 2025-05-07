@@ -1,4 +1,6 @@
-import { SectionHeader } from "./Components/SectionHeader"
+import { SectionHeader } from "./Components/SectionHeader";
+import './Css/App.css';
+
 function App() {
   
   return (
