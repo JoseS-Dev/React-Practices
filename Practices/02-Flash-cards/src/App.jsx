@@ -7,6 +7,9 @@ import './Css/App.css';
 
 function App() {
   const [cont, setCont] = useState(1);
+  const [Questions, setQuestions] = useState([]);
+  
+  // UseEffect para leer el JSON Questions.json
   
   // Funcion que pasa a la siguiente pregunta
   const NextQuestion = () => {
