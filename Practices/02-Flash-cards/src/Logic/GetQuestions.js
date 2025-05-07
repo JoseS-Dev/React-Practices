@@ -1,13 +1,10 @@
 // Obtener las preguntas del JSON
-export function getQuestions(){
+export async function getQuestions(){
     try{
-        const res = fetch('../Questions.json').then(
-            response => {
-                if (!response.ok) return null;
-                return response.json();
-            }
-        )
-        
+        const response = await fetch('/Questions.json');
+        if(!response.ok) return null;
+        const data = await response.json();
+        return data;
     }
     catch(error){
         console.error("Error fetching questions:", error);
