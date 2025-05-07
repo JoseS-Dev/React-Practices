@@ -80,9 +80,6 @@ function App() {
       setCont(cont - 1);
       setSelectedAnswer(null);
     }
-    else{
-      setDisabled(true);
-    }
   }
 
   // Funcion para reiniciar el juego
@@ -92,6 +89,7 @@ function App() {
     setContIncorrect(0);
     setSelectedAnswer(null);
     setIsFinal(false);
+    setDisabled(false);
   }
   
   return (
