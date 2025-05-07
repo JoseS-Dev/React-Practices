@@ -14,6 +14,8 @@ function App() {
   const [SelectedAnswer, setSelectedAnswer] = useState(null);
   const [ContCorrect, setContCorrect] = useState(0);
   const [ContIncorrect, setContIncorrect] = useState(0);
+  const[isFinal, setIsFinal] = useState(false);
+  const[disabled, setDisabled] = useState(false);
   
   // UseEffect para leer el JSON Questions.json
   useEffect(() => {
@@ -60,8 +62,11 @@ function App() {
     if (cont < Questions.length) {
       setCont(cont + 1);
       setSelectedAnswer(null);
-    } else {
-      alert("No more questions");
+    }
+    else{
+      setIsFinal(true);
+      setDisabled(true);
+      setCont(0)
     }
   }
   
@@ -76,12 +81,24 @@ function App() {
       setCont(cont - 1);
       setSelectedAnswer(null);
     }
+    else{
+      setDisabled(true);
+    }
+  }
+
+  // Funcion para reiniciar el juego
+  const handleReset = () => {
+    setCont(1);
+    setContCorrect(0);
+    setContIncorrect(0);
+    setSelectedAnswer(null);
+    setIsFinal(false);
   }
   
   return (
     <main>
       <SectionHeader title="Flashcards" length={Questions.length} cont={cont} handleCont={NextQuestion}/>
-      {cont <= Questions.length ? (
+      {!isFinal ? (
         <SectionAnwers
           question={QuestionQuiz}
           answers={AnswersQuizArray}
@@ -93,6 +110,7 @@ function App() {
         <PanelFinal
           contCorrect={ContCorrect}
           contIncorrect={ContIncorrect}
+          handleReset={handleReset}
         />
       )}
       <SectionBottons
