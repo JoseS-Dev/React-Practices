@@ -66,7 +66,6 @@ function App() {
     else{
       setIsFinal(true);
       setDisabled(true);
-      setCont(0)
     }
   }
   
@@ -117,6 +116,7 @@ function App() {
         PreviousAnswer={handlePrevious}
         ShowAnswer={ShowAnswer}
         NextQuestion={NextQuestion}
+        disabled={disabled}
       />
     </main>
   )
