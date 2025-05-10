@@ -9,7 +9,7 @@ function App() {
   
   return (
     <main>
-      <SectionHeader/>
+      <SectionHeader title={TITLE} githubLink={GITHUBLINK}/>
     </main>
   )
 }
