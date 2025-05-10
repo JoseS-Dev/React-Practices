@@ -1,0 +1,26 @@
+.JS--Section--Button{
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.JS--Section--Button .JS--button{
+    width: 15%;
+    height: 90%;
+    border: none;
+    background-color: #222;
+    color: #eee;
+    font-size: 1.1em;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+.JS--Section--Button .JS--button:hover{
+    background-color: #a32502;
+    color: #eee;
+    border: none;
+}
