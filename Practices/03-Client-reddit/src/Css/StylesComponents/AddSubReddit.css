@@ -1,5 +1,5 @@
 .JS--Section--Button{
-    width: 100%;
+    width: 20%;
     height: 10%;
     padding: 10px;
     display: flex;
@@ -7,8 +7,9 @@
     align-items: center;
 }
 .JS--Section--Button .JS--button{
-    width: 15%;
-    height: 90%;
+    width: 80%;
+    height: 100%;
+    padding: 10px 5px;
     border: none;
     background-color: #222;
     color: #eee;

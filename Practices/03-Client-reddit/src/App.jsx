@@ -1,5 +1,5 @@
 import { SectionHeader } from "./Components/SectionHeader"
-import { AddSubReddit } from "./Components/AddSubReddit";
+import { ContainerMain } from "./Components/ContainerMain";
 import './Css/App.css';
 
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <main>
       <SectionHeader title={TITLE} githubLink={GITHUBLINK}/>
-      <AddSubReddit/>
+      <ContainerMain/>
     </main>
   )
 }
