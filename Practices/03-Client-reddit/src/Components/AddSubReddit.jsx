@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ModalReddit } from "./ModalReddit";
 import '../Css/StylesComponents/AddSubReddit.css';
 
-export function AddSubReddit(){
+export function AddSubReddit({onAddSubreddit}){
     const[isOpen, setIsOpen] = useState(false);
 
     // Funcion que abre la ventana modal
@@ -21,7 +21,7 @@ export function AddSubReddit(){
                 Add SubReddit
             </button>
             {isOpen && (
-                <ModalReddit isOpen={isOpen} closeModal={CloseModal}/>
+                <ModalReddit isOpen={isOpen} closeModal={CloseModal} onAddSubreddit={onAddSubreddit}/>
             )}
         </section>
     )
